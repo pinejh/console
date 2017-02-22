@@ -1,0 +1,2 @@
+# console
+custom go package

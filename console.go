@@ -79,3 +79,12 @@ func calcFactors(v []vector) int {
 	}
 	return factors
 }
+
+func Repeat(f func(), delay time.Duration) {
+	go func() {
+		for {
+			f()
+			time.Sleep(delay)
+		}
+	}()
+}
